@@ -1,0 +1,281 @@
+@import 'header';
+@import 'register';
+@import 'login';
+@import 'single-product.scss';
+
+$darkgrey: RGB(28,29,29);
+
+body{
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.hero{
+    width: 100%;
+    background-image: url(../img/atlanta-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero-text{
+        margin-top: 90%;
+        text-align: center;
+        margin-bottom: 10%;
+        h2{
+            font-size: 1rem;
+            color: white;
+            margin-bottom: 0;
+        }
+    
+        h1{
+            font-size: 2rem;
+            color: white;
+            
+        } 
+    }
+
+    a{
+        width: 200px;
+        height: 50px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.pick-date-wrap{
+    width: 100%;
+
+    form{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        select{
+            width: 40%;
+        }
+
+       
+    } 
+}
+
+.calendar-wrap{
+    margin-bottom: 10%;
+    .checkin-calendar-content, .checkout-calendar-content{
+        width: 250px;
+
+        .calendar-header{
+            width: 100%;
+            background-color: rgb(21,22,22);
+            .header-content{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding-top: 20px;
+                padding-bottom: 4%;
+                
+                .prev-month, .next-month{
+                    a{
+                        color: rgb(80,80,81);
+
+                    }
+                }
+                .active-month{
+                    h2{
+                        color: white;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .calendar-dates{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: $darkgrey;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+
+            .date{
+                width: 10%;
+                margin-right: 2.5%;
+                margin-bottom: 7%;
+                color: white;
+            }
+        }
+
+        .week-day-wrap{
+            width: 100%;
+            background-color: $darkgrey;
+            display: flex;
+            justify-content: space-around;
+            padding-left: 10px;
+            padding-right: 10px;
+
+            .week-day{
+                width: 10%;
+                margin-right: 2.5%;
+                margin-bottom: 7%;
+                color: white;
+                
+            }
+        }
+    }
+
+    .availability-button{
+        width: 240px;
+        height: 100px;
+        background-color: black;
+        color: white;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+}
+
+.about-us-promo{
+    .about-us-promo-content{
+        width: 82%;
+        margin: 0 auto;
+        text-align: center;
+        
+      
+    }
+    h1, p{
+        margin-bottom: 10%;
+    }
+
+
+    button{
+        width: 139px;
+        background-color: RGB(188,156,123);
+        color: white;
+        height: 40px;
+        margin-bottom: 10%;
+        
+    }
+
+    .layred-images-wrap{
+        width: 100%;
+        margin-bottom: 55%;
+        .layered-images-content{
+            position: relative;
+            .layered-image-1{
+                width: 140px;
+                padding-bottom: 175px;
+                background-color: skyblue; 
+                position: absolute;
+                left: 20%;
+            }
+
+            .layered-image-2{
+                width: 140px;
+                padding-bottom: 175px;
+                background-color: lightsalmon; 
+                position: absolute;
+                left: 50%;
+                top: 25px;
+            }
+
+            .layered-image-3{
+                width: 140px;
+                padding-bottom: 175px;
+                background-color: lightseagreen; 
+                position: absolute;
+                left: 35%;
+                top: 35px;
+            }
+        }
+    }
+}
+
+.properties-wrap{
+    width: 100%;
+    background-color: rgb(249,249,249);
+    padding-top: 20%;
+    text-align: center;
+    .properties-content{
+        width: 82%;
+        padding-top: 5%;
+        margin: 0 auto;
+        background-color: white;
+        .properties-header{
+            margin-bottom: 20%;
+
+        }
+
+        .properties-image{
+            width: 100%;
+            padding-bottom: 150px;
+            background-color: lightgrey;
+            margin-bottom: 10%;
+
+        }
+
+        .properties-description{
+
+        }
+
+        button{
+            width: 175px;
+            height: 40px;
+            background-color: black;
+            color: white;
+        }
+    }
+}
+
+@media screen and (min-width: 768px){
+
+    .calendar-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .checkin-calendar-content,.checkout-calendar-content{
+            width: 400px;
+        }
+    }
+   
+    .about-us-promo{
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .properties-wrap{
+        .properties-content{
+            .properties-image{
+                padding-bottom: 520px;
+            }
+        }
+    }
+
+    .hero{
+        padding: 0;
+        background-position: unset;
+        background-size: 100%;
+
+        .hero-text{
+            margin-top: 38%;
+        }
+
+        a{
+            margin-bottom: 5%;
+        }
+    }
+}
