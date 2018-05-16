@@ -44,6 +44,7 @@
 				<li><a href="">Properties</a></li>
 				<li><a href="http://atlantavacationclub.com/about">About</a></li>
 				<li><a href="">Contact</a></li> 
+				<li><a href="">Reviews</a></li> 
 			</ul>
 		</div>
 	</nav>

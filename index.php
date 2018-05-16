@@ -276,8 +276,8 @@
 
         <section class="about-us-promo">
             <div class="about-us-promo-content">
-                <h1>Relax In Our Resort</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum ipsa, eaque, quae maiores magni dignissimos minus architecto facere autem!</p>
+                <h1>Relax At Our Private Residence</h1>
+                <p> Enjoy fully furnished residences that come fully equipped with all the essentials to make you feel like you are at home.</p>
                 <button>About Us</button>
             </div>
 
@@ -293,32 +293,29 @@
         <section class="properties-wrap">
             <div class="properties-content">
                 <div class="properties-header">
-                    <h1>Properties</h1>
+                    <h1>Rental Feautres</h1>
                 </div>
-
-                <div class="properties-image"></div>
-
-                <div class="properties-description">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. is saepe sed soluta dignis!</p>
+                <div class="property-feature-grid-wrap">
+                    <div class="property-feature-image feature-image-kitchen">
+                        <p>Kitchen</p>
+                    </div>
+                    <div class="property-feature-image feature-image-laundry">
+                        <p>Laundry</p>
+                    </div>
+                    <div class="property-feature-image feature-image-wifi">
+                        <p>Wifi</p>
+                    </div>
+                    <div class="property-feature-image feature-image-parking">
+                        <p>Parking</p>
+                    </div>
+                    <div class="property-feature-image feature-image-tv">
+                        <p>TV</p>
+                    </div> 
+                    <div class="property-feature-image feature-image-heating-ac">
+                        <p>Heating/AC</p>
+                    </div>          
                 </div>
-
-                <button>Book Now!</button>
-
             </div>
-            <div class="properties-content">
-                    <div class="properties-header">
-                        <h1>Properties</h1>
-                    </div>
-    
-                    <div class="properties-image"></div>
-    
-                    <div class="properties-description">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. is saepe sed soluta dignis!</p>
-                    </div>
-    
-                    <button>Book Now!</button>
-    
-                </div>
         </section>
     </div>
        

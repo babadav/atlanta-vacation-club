@@ -10,3 +10,166 @@ $darkgrey: RGB(28,29,29);
     text-align: center;
 }
 
+
+.single-product-header-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // background-image: url(../../theme/img/avc-product-1)
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-bottom: 30%;
+    background-color: lightblue;
+
+
+    .single-product-navtabs{
+        width: 96%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        ul{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0;
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.single-product-left-column{
+    width: 100%;
+
+    .product-title{
+        width: 94%;
+        display: flex;
+        margin: 0 auto;
+        font-size: 1.3rem;
+
+    }
+
+    .single-product-image-slider{
+        width: 94%;
+        margin: 0 auto;
+        background-color: black;
+        padding-bottom: 50%;
+        margin-bottom: 5%;
+        .slider{
+            ul{
+               
+                img{
+                    
+                }
+            }   
+        }
+    }
+
+    .property-features{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .single-property-feature{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10%;
+
+            p{
+                color: RGB(135,135,135);
+            }
+
+            img{
+                margin-bottom: 10%;
+            }
+        }
+    }
+
+    .product-description{
+        width: 94%;
+        margin: 0 auto;
+        text-align: justify;
+        line-height: 2;
+        color: RGB(135,135,135);
+    }
+
+    .around-residence-wrap{
+        
+        width: 94%;
+        margin: 0 auto;
+        
+
+        .attraction-wrap   {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .attraction{
+                width: 100%;
+                padding-bottom: 30%;
+                margin-bottom: 2%;
+                background-color: lightseagreen;
+            }
+        }  
+    }
+}
+
+.single-product-right-column{
+    display: none;
+}
+
+
+@media screen and (min-width: 768px){
+
+    .single-product-left-column{
+
+        .property-features{
+            width: 94%;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .around-residence-wrap{
+           
+
+            .attraction-wrap{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+
+                .attraction{
+                    width: 31%;
+                    padding-bottom: 27%;
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .single-product-page-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        .single-product-left-column{
+            width: 65%;
+        }
+
+        .single-product-right-column{
+            width: 30%;
+        }
+    }
+
+    .single-product-right-column{
+        display: block;
+    }
+}
